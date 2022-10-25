@@ -11,4 +11,8 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #eee;
         font-family: 'Commissioner', sans-serif;
     }
+
+    a {
+        text-decoration: none;
+    }
 `
