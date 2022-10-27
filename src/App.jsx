@@ -6,6 +6,8 @@ import { NavBar } from "./components/Nav/NavBar/NavBar"
 import { GlobalStyle } from "./styles/global"
 import { ProjectTitle } from "./components/UpperCard/ProjectTitle/ProjectTitle"
 import { Buttons } from "./components/UpperCard/TopCardButtons/Buttons/Buttons"
+import { InfoCard } from "./components/BacksData/InfoCard/InfoCard"
+import { InfoContainer } from "./components/BacksData/InfoContainer/InfoContainer"
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
       <Banner>
         <NavBar /> 
       </Banner>
+
       <Container>
         <TopCard>
           <MastercraftLogo />
@@ -22,6 +25,11 @@ function App() {
           <Buttons />
         </TopCard>
       </Container>
+
+      <InfoCard>
+        <InfoContainer />
+      </InfoCard>
+      
     </>
   )
 }
