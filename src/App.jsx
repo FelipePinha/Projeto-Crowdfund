@@ -8,6 +8,7 @@ import { ProjectTitle } from "./components/UpperCard/ProjectTitle/ProjectTitle"
 import { Buttons } from "./components/UpperCard/TopCardButtons/Buttons/Buttons"
 import { InfoCard } from "./components/BacksData/InfoCard/InfoCard"
 import { InfoContainer } from "./components/BacksData/InfoContainer/InfoContainer"
+import { PledgesCard } from "./components/Pledges/PledgesCard/PledgesCard"
 
 function App() {
 
@@ -24,12 +25,13 @@ function App() {
           <ProjectTitle />
           <Buttons />
         </TopCard>
-      </Container>
 
-      <InfoCard>
-        <InfoContainer />
-      </InfoCard>
-      
+        <InfoCard>
+          <InfoContainer />
+        </InfoCard>
+
+        <PledgesCard />
+      </Container>
     </>
   )
 }
