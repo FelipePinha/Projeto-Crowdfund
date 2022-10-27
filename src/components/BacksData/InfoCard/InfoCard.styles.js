@@ -11,7 +11,7 @@ export const CardStyles = styled.section`
     flex-direction: column;
     justify-content: center;
     row-gap: 25px;
-    margin: 180px auto;
+    margin: 190px auto;
     padding: 25px;
 
     @media (max-width: 768px) {

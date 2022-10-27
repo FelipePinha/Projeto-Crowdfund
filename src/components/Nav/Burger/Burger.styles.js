@@ -5,6 +5,7 @@ export const StyleBurger = styled.div`
     position: fixed;
     top: 6%;
     right: 5%;
+    z-index: 2;
     cursor: pointer;
 
     @media (max-width: 768px){

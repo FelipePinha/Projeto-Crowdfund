@@ -21,6 +21,7 @@ export const NavList = styled.ul`
         top: 4rem;
         right: 3rem;
         display: ${props => props.menuIsOpen};
+        z-index: 2;
 
         li a{
             color: #000;
