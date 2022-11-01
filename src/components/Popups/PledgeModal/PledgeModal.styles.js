@@ -57,7 +57,8 @@ export const InputWrapper = styled.div`
         width: 100%;
         height: 60px;
         padding: 10px 30px;
-        border: 1px solid rgba(0,0,0,.5);
+        border: 1px solid;
+        border-color: ${props => props.error ? 'rgba(255, 0, 0, .5)' : 'rgba(0, 0, 0,.5)'};
         border-radius: 50px;
         outline: none;
 

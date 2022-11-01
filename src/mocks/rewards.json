@@ -2,21 +2,21 @@
     {
         "id": "f90d8b4d-7ba1-49ea-9da0-428f42fa7fdb",
         "title": "Bamboo Stand",
-        "initialValue": "Pledge $25 or more",
+        "initialValue": "25",
         "description": "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.",
         "quantLeft": "101"        
     },
     {
         "id": "651fd4cc-cbf4-4347-adcb-4dafb94b33c6",
         "title": "Black Edition Stand",
-        "initialValue":"Pledge $75 or more",
+        "initialValue":"75",
         "description": "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
         "quantLeft": "64"
     },
     {
         "id": "afd263fc-caa4-4714-b068-cb3c174e2491",
         "title": "Mahogany Special Edition",
-        "initialValue":"Pledge $200 or more",
+        "initialValue":"200",
         "description": "ou get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
         "quantLeft": "0"
     }

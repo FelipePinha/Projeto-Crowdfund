@@ -6,6 +6,9 @@ export function RewardCard({title, initialValue, description, quantLeft}) {
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
     function handleToggleModal() {
+        if(quantLeft <= 0) {
+            return
+        }
         setModalIsOpen(!modalIsOpen)
     }
     
@@ -14,7 +17,7 @@ export function RewardCard({title, initialValue, description, quantLeft}) {
             <C.Container quantLeft={quantLeft}>
                 <C.TitleWrapper quantLeft={quantLeft}>
                     <h2>{title}</h2>
-                    <p>{initialValue}</p>
+                    <p>Pledge ${initialValue} or more</p>
                 </C.TitleWrapper>
                 <div>
                     <C.Info>
@@ -33,7 +36,8 @@ export function RewardCard({title, initialValue, description, quantLeft}) {
             <PledgeModal 
                 title={title}
                 description={description} 
-                modalIsOpen={modalIsOpen} 
+                modalIsOpen={modalIsOpen}
+                initialValue={initialValue} 
                 handleToggleModal={handleToggleModal}              
             />
         </>
