@@ -10,30 +10,33 @@ import { InfoCard } from "./components/BacksData/InfoCard/InfoCard"
 import { InfoContainer } from "./components/BacksData/InfoContainer/InfoContainer"
 import { PledgesCard } from "./components/Pledges/PledgesCard/PledgesCard"
 import { PledgesProvider } from "./context/PledgesContext"
+import { TotalBackerProvider } from "./context/TotalBackerContext"
 
 function App() {
 
   return (
     <>
       <PledgesProvider>
-        <GlobalStyle />
-        <Banner>
-          <NavBar /> 
-        </Banner>
+        <TotalBackerProvider>
+          <GlobalStyle />
+          <Banner>
+            <NavBar /> 
+          </Banner>
 
-        <Container>
-          <TopCard>
-            <MastercraftLogo />
-            <ProjectTitle />
-            <Buttons />
-          </TopCard>
+          <Container>
+            <TopCard>
+              <MastercraftLogo />
+              <ProjectTitle />
+              <Buttons />
+            </TopCard>
 
-          <InfoCard>
-            <InfoContainer />
-          </InfoCard>
+            <InfoCard>
+              <InfoContainer />
+            </InfoCard>
 
-          <PledgesCard />
-        </Container>
+            <PledgesCard />
+          </Container>
+        </TotalBackerProvider>
       </PledgesProvider>
     </>
   )
