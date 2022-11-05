@@ -4,9 +4,12 @@ import { FaDollarSign } from 'react-icons/fa'
 import { Overlay } from '../PopupsStyles/Overlay'
 import { useState } from 'react'
 import { GratitudeModal } from '../GratitudeModal/GratitudeModal'
+import { useContext } from 'react'
+import { PledgesContext } from '../../../context/PledgesContext'
 
 
 export function PledgeModal({ modalIsOpen, title, description, initialValue, handleToggleModal }) {
+    const {sumPledgeTotalValue} = useContext(PledgesContext)
     const [value, setValue] = useState(initialValue)
     const [error, setError] = useState(false)
     const [gratitudeModalIsOpen, setGratitudeModalisOpen] = useState(false)
@@ -22,6 +25,7 @@ export function PledgeModal({ modalIsOpen, title, description, initialValue, han
             return
         }
 
+        sumPledgeTotalValue(value)
         handleToggleModal()
         GratitudeModalToggle()
     }
@@ -38,7 +42,8 @@ export function PledgeModal({ modalIsOpen, title, description, initialValue, han
                     <C.Form onSubmit={handleSubmit}>
                         <C.InputWrapper error={error}>
                             <input 
-                                min={initialValue} 
+                                min={initialValue}
+                                step=".01"
                                 value={value} 
                                 type="number"
                                 onChange={e => {setValue(e.target.value), setError(false)}}
