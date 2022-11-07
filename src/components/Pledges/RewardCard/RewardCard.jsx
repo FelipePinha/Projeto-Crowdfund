@@ -4,9 +4,10 @@ import * as C from './RewardCard.styles'
 
 export function RewardCard({title, initialValue, description, quantLeft}) {
     const [modalIsOpen, setModalIsOpen] = useState(false)
+    const [totalQuantLeft, setTotalQuantLeft] = useState(Number(quantLeft))
 
     function handleToggleModal() {
-        if(quantLeft <= 0) {
+        if(totalQuantLeft <= 0) {
             return
         }
         setModalIsOpen(!modalIsOpen)
@@ -14,8 +15,8 @@ export function RewardCard({title, initialValue, description, quantLeft}) {
     
     return (
         <>
-            <C.Container quantLeft={quantLeft}>
-                <C.TitleWrapper quantLeft={quantLeft}>
+            <C.Container quantLeft={totalQuantLeft}>
+                <C.TitleWrapper quantLeft={totalQuantLeft}>
                     <h2>{title}</h2>
                     <p>Pledge ${initialValue} or more</p>
                 </C.TitleWrapper>
@@ -24,12 +25,12 @@ export function RewardCard({title, initialValue, description, quantLeft}) {
                         {description}
                     </C.Info>
                 </div>
-                <C.ActionContainer quantLeft={quantLeft}>
-                    <h1>{quantLeft} <span>left</span></h1>
+                <C.ActionContainer quantLeft={totalQuantLeft}>
+                    <h1>{totalQuantLeft} <span>left</span></h1>
                     <button 
                         onClick={handleToggleModal}
                         >
-                            {Number(quantLeft) === 0 ? 'Out of stock' : 'Select Reward'}
+                            {totalQuantLeft === 0 ? 'Out of stock' : 'Select Reward'}
                     </button>
                 </C.ActionContainer>
             </C.Container>
@@ -38,7 +39,8 @@ export function RewardCard({title, initialValue, description, quantLeft}) {
                 description={description} 
                 modalIsOpen={modalIsOpen}
                 initialValue={initialValue} 
-                handleToggleModal={handleToggleModal}              
+                handleToggleModal={handleToggleModal}
+                setTotalQuantLeft={setTotalQuantLeft}              
             />
         </>
     )

@@ -8,7 +8,7 @@ export const BarContainer = styled.div`
 `
 
 export const Bar = styled.div`
-    width: 80%;
+    width: ${props => props.progress}%;
     height: 100%;
     border-radius: 10px;
     background-color: hsl(176, 50%, 47%);

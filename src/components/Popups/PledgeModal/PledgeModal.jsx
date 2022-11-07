@@ -9,7 +9,15 @@ import { PledgesContext } from '../../../context/PledgesContext'
 import { TotalBackerContext } from '../../../context/TotalBackerContext'
 
 
-export function PledgeModal({ modalIsOpen, title, description, initialValue, handleToggleModal }) {
+export function PledgeModal({ 
+    modalIsOpen, 
+    title, 
+    description, 
+    initialValue, 
+    handleToggleModal, 
+    setTotalQuantLeft 
+}) {
+
     const {sumPledgeTotalValue} = useContext(PledgesContext)
     const {sumTotalBackers} = useContext(TotalBackerContext)
     const [value, setValue] = useState(initialValue)
@@ -29,6 +37,7 @@ export function PledgeModal({ modalIsOpen, title, description, initialValue, han
 
         sumPledgeTotalValue(value)
         sumTotalBackers()
+        setTotalQuantLeft(prev => prev - 1)
         handleToggleModal()
         GratitudeModalToggle()
     }
