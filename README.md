@@ -1,6 +1,4 @@
-# Projeto Crowdfund
-
-### IMAGEM
+<h1 align='center'>Projeto Crowdfund</h1>
 
 ## Instalação
 
