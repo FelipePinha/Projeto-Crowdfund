@@ -10,15 +10,12 @@ Clone o projeto em uma pasta separada
 git clone https://github.com/FelipePinha/Projeto-Crowdfund
 ```
 
-Entre na pasta do projeto
+Entre na pasta do projeto e instale as dependências
 ```bash
 cd Projeto-Crowdfund
-```
-
-instale as dependências
-```bash
 yarn install
 ```
+
 Inicie o projeto
 ```bash
 yarn dev
