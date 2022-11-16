@@ -13,5 +13,6 @@ export const AboutTextWrapper = styled.div`
 
     p {
         color: hsl(0, 0%, 48%);
+        text-align: justify;
     }
 `

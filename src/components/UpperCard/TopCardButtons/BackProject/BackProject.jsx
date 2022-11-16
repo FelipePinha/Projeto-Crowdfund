@@ -1,5 +1,5 @@
 import * as C from './BackProject.styles'
 
 export function BackProject() {
-    return <C.Button>Back this project</C.Button>
+    return <C.Button>Apoie o projeto</C.Button>
 }

@@ -1,23 +1,23 @@
 [
     {
         "id": "f90d8b4d-7ba1-49ea-9da0-428f42fa7fdb",
-        "title": "Bamboo Stand",
+        "title": "Pacote Simples",
         "initialValue": "25",
-        "description": "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.",
-        "quantLeft": "101"        
+        "description": "Você recebe uma camiseta com estampa personalizada. Além disso, você será adicionado(a) a uma lista especial para concorrer a prêmios.",
+        "quantLeft": "30"        
     },
     {
         "id": "651fd4cc-cbf4-4347-adcb-4dafb94b33c6",
-        "title": "Black Edition Stand",
+        "title": "Pacote Avançado",
         "initialValue":"75",
-        "description": "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
-        "quantLeft": "64"
+        "description": "Você recebe uma camiseta com mais opções de estampas personalizadas, também será adicionado(a) em uma lista para concorrer a prêmios e, além disso, receberá um brinde adicional a sua escolha.",
+        "quantLeft": "15"
     },
     {
         "id": "afd263fc-caa4-4714-b068-cb3c174e2491",
-        "title": "Mahogany Special Edition",
+        "title": "Pacote Edição Ultra",
         "initialValue":"200",
-        "description": "ou get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
-        "quantLeft": "1"
+        "description": "Você recebe todos os benefícios anteriores. Além de uma chance única de concorrer a uma viagem para o exterior.",
+        "quantLeft": "3"
     }
 ]

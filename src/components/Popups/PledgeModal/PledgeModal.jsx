@@ -63,8 +63,8 @@ export function PledgeModal({
                             <FaDollarSign className='dollarIcon'/>
                         </C.InputWrapper>
                         <C.ButtonsWrapper>
-                            <button className='submit-btn' type='submit'>Continue</button>
-                            <button onClick={handleToggleModal} className='cancel-btn' type='button'>Cancel</button>
+                            <button className='submit-btn' type='submit'>Continuar</button>
+                            <button onClick={handleToggleModal} className='cancel-btn' type='button'>Cancelar</button>
                         </C.ButtonsWrapper>
                     </C.Form>
                 </C.ModalWrapper>

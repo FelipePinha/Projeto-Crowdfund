@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import HeroDesktop from '../../assets/image-hero-desktop.jpg'
+import BannerKids from '../../assets/banner_kids.jpg'
 
 export const BannerContainer = styled.div`
     height: 20rem;
-    background: url(${HeroDesktop}) center center/cover no-repeat;
+    background: url(${BannerKids}) center center/cover no-repeat;
 `

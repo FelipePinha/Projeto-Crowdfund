@@ -3,16 +3,18 @@ import * as C from './AboutProject.styles'
 export function AboutProject() {
     return(
         <C.Container>
-            <h1>About this project</h1>
+            <h1>Sobre o projeto</h1>
             <C.AboutTextWrapper>
                 <p>
-                    The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. 
-                    Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, 
-                    helping you stay focused on the task at hand.
+                    Segundo dados publicados pelo Instituto Mobilidade e Desenvolvimento Social, 
+                    cerca de 40% das crianças brasileiras com menos de nove anos vivem na pobreza, 
+                    o que significa que mais de 25 milhões de pessoas nessa faixa etária moram em lares 
+                    com renda média mensal menor que R$ 436.
                 </p>
                 <p>
-                    Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow 
-                    notepads, pens, and USB sticks to be stored under the stand.
+                    Por isso, em Parceria com diversas ONGs humanitárias, tais como a Associação Vagalume, Projeto Ninho e Projeto Guri. Este
+                    projeto de Crowdfund pretende arrecadar R$ 10.000,00 em doações. Com o objetivo de ajudar essas crianças a 
+                    trilhar um caminho com menos dificuldades.
                 </p>
             </C.AboutTextWrapper>
         </C.Container>

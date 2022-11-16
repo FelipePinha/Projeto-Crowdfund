@@ -18,7 +18,7 @@ export function RewardCard({title, initialValue, description, quantLeft}) {
             <C.Container quantLeft={totalQuantLeft}>
                 <C.TitleWrapper quantLeft={totalQuantLeft}>
                     <h2>{title}</h2>
-                    <p>Pledge ${initialValue} or more</p>
+                    <p>Doe R${initialValue} ou mais</p>
                 </C.TitleWrapper>
                 <div>
                     <C.Info>
@@ -26,11 +26,11 @@ export function RewardCard({title, initialValue, description, quantLeft}) {
                     </C.Info>
                 </div>
                 <C.ActionContainer quantLeft={totalQuantLeft}>
-                    <h1>{totalQuantLeft} <span>left</span></h1>
+                    <h1>{totalQuantLeft} <span>Restando</span></h1>
                     <button 
                         onClick={handleToggleModal}
                         >
-                            {totalQuantLeft === 0 ? 'Out of stock' : 'Select Reward'}
+                            {totalQuantLeft === 0 ? 'Esgotado' : 'Selecionar'}
                     </button>
                 </C.ActionContainer>
             </C.Container>

@@ -4,13 +4,13 @@ export function RightNav({ menuIsOpen }) {
     return (
         <C.NavList menuIsOpen={menuIsOpen ? 'flex' : 'none'}>
             <li>
-                <a href="#">About</a>
+                <a href="#">Sobre</a>
             </li>
             <li>
-                <a href="#">Discover</a>
+                <a href="#">Descubra</a>
             </li>
             <li>
-                <a href="#">Get Started</a>
+                <a href="#">Contato</a>
             </li>
         </C.NavList>
     )

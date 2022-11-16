@@ -3,8 +3,8 @@ import * as C from './ProjectTitle.styles'
 export function ProjectTitle() {
     return (
         <C.Container>
-            <h1>Mastercraft Bamboo Monitor Riser</h1>
-            <h3>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</h3>
+            <h1>Arrecadação para instituições carentes</h1>
+            <h3>Vamos levantar fundos para garantir o futuro das nossas crianças.</h3>
         </C.Container>
     )
 }

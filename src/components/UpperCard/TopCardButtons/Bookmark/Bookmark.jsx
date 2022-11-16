@@ -13,7 +13,7 @@ export function Bookmark() {
     return (
         <C.Container onClick={handleBookmark}>
             <img src={`${isBookmarked ? BookmarkCheckIcon : BookmarkIcon}`} alt="" />
-            <span>{isBookmarked ? 'Bookmarked' : 'Bookmark'}</span>
+            <span>{isBookmarked ? 'Favorito' : 'Favoritar'}</span>
         </C.Container>
     )
 }

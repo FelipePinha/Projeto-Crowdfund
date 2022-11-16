@@ -13,9 +13,9 @@ export function InfoContainer() {
     return (
         <>
             <C.Container>
-                <Info title={`$${pledgeTotalValue.toFixed(2)}`} subTitle={`of $${expectedValue} backed`} />
-                <Info title={totalBackers} subTitle='total backers'/>
-                <Info title='56' subTitle='days left'/>
+                <Info title={`R$${pledgeTotalValue.toFixed(2)}`} subTitle={`de R$${expectedValue} esperado`} />
+                <Info title={totalBackers} subTitle='Apoiadores totais'/>
+                <Info title='56' subTitle='Dias restando'/>
             </C.Container>
             <ProgressionBar expectedValue={expectedValue}/>
         </>
