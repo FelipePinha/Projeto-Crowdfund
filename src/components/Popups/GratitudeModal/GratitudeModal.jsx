@@ -8,10 +8,10 @@ export function GratitudeModal({ gratitudeModalIsOpen, gratitudeModalToggle }) {
             <C.GratitudeCard>
                 <img src={IconCheck} alt="check icon" />
                 <C.Description>
-                    <h1>Thanks for your support!</h1>
+                    <h1>Obrigado pelo seu apoio</h1>
                     <p>
-                        Your pledge bring us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide.
-                        You will get an email once our campaign is completed.
+                        Sua doação nos deixa um passo mais perto de dar uma vida melhor para crianças carentes.
+                        Você vai receber um email quando a campanha estiver completa.
                     </p>
                 </C.Description>
                 <C.Button onClick={gratitudeModalToggle}>Got it!</C.Button>
