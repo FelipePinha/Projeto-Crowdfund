@@ -14,7 +14,7 @@ export function GratitudeModal({ gratitudeModalIsOpen, gratitudeModalToggle }) {
                         Você vai receber um email quando a campanha estiver completa.
                     </p>
                 </C.Description>
-                <C.Button onClick={gratitudeModalToggle}>Got it!</C.Button>
+                <C.Button onClick={gratitudeModalToggle}>Entendi!</C.Button>
             </C.GratitudeCard>
         </Overlay>
     )

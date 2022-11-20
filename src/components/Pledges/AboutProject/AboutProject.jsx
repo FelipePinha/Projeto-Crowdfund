@@ -6,10 +6,9 @@ export function AboutProject() {
             <h1>Sobre o projeto</h1>
             <C.AboutTextWrapper>
                 <p>
-                    Segundo dados publicados pelo Instituto Mobilidade e Desenvolvimento Social, 
-                    cerca de 40% das crianças brasileiras com menos de nove anos vivem na pobreza, 
-                    o que significa que mais de 25 milhões de pessoas nessa faixa etária moram em lares 
-                    com renda média mensal menor que R$ 436.
+                    Segundo dados publicados pela Fundação Abrinq com relação ao ano de 2021, 
+                    cerca de 45,4% de crianças de 0 a 14 anos vivem em situação de pobreza e, aproximadamente
+                    1.768.476 milhão de crianças estão em situação de trabalho infantil, correspondendo a 4,6% da população nesta faixa etária.
                 </p>
                 <p>
                     Por isso, em Parceria com diversas ONGs humanitárias, tais como a Associação Vagalume, Projeto Ninho e Projeto Guri. Este
